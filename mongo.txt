@@ -1,0 +1,11 @@
+Configuração mongo
+
+C:\Program Files\MongoDB\Server\4.2\bin
+
+Registrar variável de ambiente
+
+- Criar pasta data em C:
+- Criar pasta db
+
+---- mongod
+
