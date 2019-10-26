@@ -1,6 +1,7 @@
 'use strict';
 var mongoose = require('mongoose'),
-    Playlist = mongoose.model('Playlists');
+    Playlist = mongoose.model('Playlist');
+
 exports.list_all_playlists = function (req, res) {
     Playlist.find({}, function (err, playlist) {
         if (err)
@@ -9,7 +10,8 @@ exports.list_all_playlists = function (req, res) {
     });
 };
 exports.create_a_playlist = function (req, res) {
-    var new_playlist = new Message(req.body);
+    var new_playlist = new Playlist(req.body);
+    console.log('playlist: ' + new_playlist)
     new_playlist.save(function (err, playlist) {
         if (err)
             res.send(err);
