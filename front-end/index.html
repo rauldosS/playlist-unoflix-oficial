@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/page.css">
+  <title>Unoflix</title>
+</head>
+<body>
+  <nav>
+    <ul class="topnav">
+      <li><a class="active" href="#"><img src="img/unoflix_logo.png" style="width:80%;height: 40%;" alt="logo da unoflix em vermelho, com as letras levemente curvadas no centro"></a></li>
+      <li><a class="meio" href="#news">Vídeos</a></li>
+      <li><a class="meio" href="playlist.html">Minhas playlists</a></li>
+      <li class="right meio"><a href="#about"><i  class="fas fa-user-circle"></i></a></li>
+      <li class="right meio"><a href="#about"><i class="fas fa-search"></i></a></li>
+    </ul>
+  </nav>
+  <section class="menu_carrosel">
+    <div class="w3-content w3-display-container">
+      <a href="player.html"><img class="mySlides" src="img/filmes/miss.png"></a>
+      <img class="mySlides" src="img/filmes/miss2.jpg">
+      <img class="mySlides" src="img/filmes/miss3.jpg">
+      <img class="mySlides" src="img/filmes/miss4.jpg">
+        
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </section>
+  <section class="videos_total"></section>
+</body>
+</html>
+<script src="js/page.js"></script>
