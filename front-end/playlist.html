@@ -39,24 +39,20 @@
   
       <h5>Vídeo</h5>
 
-      <div class="section">
+      <!-- <div class="section">
         <div class="row">
           <video class="player" type="mp4" controls>
             <source src="video/video.mp4" type="video/mp4">
           </video>
         </div>
-      </div>
+      </div> -->
 
       <div class="section">
         <div class="row">
-          <table>
-            <tr>
-              <a href="#!"><td>Vídeo</td></a> 
-              <td>1</td>
-            </tr>
-            <tr>
-            </tr>
-          </table>
+          <button onclick="createElements()">Adicionar vídeos</button>
+        </div>
+        <div id="videos" class="row">
+          
         </div>
       </div>
     </div>
@@ -65,3 +61,4 @@
 
 </html>
 <script src="js/page.js"></script>
+<script src="js/createElements.js"></script>
