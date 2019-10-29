@@ -1,6 +1,8 @@
-import * as myPlaylist from "../../api/controller/playlistController";
+import teste from "../../api/controller/playlistController";
 
-myPlaylist.teste(req, res)
+windows.teste = function () {
+    teste(req, res)
+}
 
 window.createElements = function () {
     alert('criando...')
@@ -95,10 +97,7 @@ window.createElements = function () {
         divCardActionDoc.appendChild(aCardAdd)
 
         let add = document.querySelector('#add' + nrVideo)
-        add.textContent = 'ADICIONAR'
-
-        // a.setAttribute('href', url)
-        // a.setAttribute('href', adicionar/remover)        
+        add.textContent = 'ADICIONAR'     
     });
 }
 
