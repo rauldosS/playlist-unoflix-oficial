@@ -19,8 +19,8 @@ exports.list_all_playlists = function (req, res) {
         res.json(playlist);
     });
 };
-exports.create_a_playlist = function (req, res, body) {
-    var new_playlist = new Playlist(body);
+exports.create_a_playlist = function (req, res) {
+    var new_playlist = new Playlist(req.body);
     console.log('playlist: ' + new_playlist)
     new_playlist.save(function (err, playlist) {
         if (err)
@@ -48,7 +48,7 @@ exports.delete_a_playlist = function (req, res) {
     }, function (err, playlist) {
         if (err)
             res.send(err);
-        res.json({ playlist: 'Playlist successfully deleted' });
+        res.json({ playlist: "Playlist successfully deleted" });
     });
 };
 exports.teste = function (req, res) {
